@@ -1,0 +1,185 @@
+:root {
+  --primary-100: #26A69A;
+  --primary-200: #408d86;
+  --primary-300: #cdfaf6;
+  --accent-100: #80CBC4;
+  --accent-200: #43A49B;
+  --text-100: #263339;
+  --text-200: #728f9e;
+  --bg-100: #E0F2F1;
+  --bg-200: #D0EBEA;
+  --bg-300: #FFFFFF;
+  --trhover: rgb(135, 203, 185);
+}
+
+.dark {
+  --bg-200: #6a7aff;
+  --accent-200: #1e2656;
+  --accent-100: #6a7aff;
+  --trhover: #525ba8;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: 22px;
+}
+
+.navbar-light .navbar-brand {
+  color: black;
+  font-size: 30px;
+}
+
+header {
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/free-vector/vector-cabinet-dentist-cartoon-interior-with-comfortable-chair_1441-2901.jpg?w=1380&t=st=1684386387~exp=1684386987~hmac=22243072270ea170196223724817faea7f47550cb73e7fd67f0d0fa385d78b83");
+}
+
+/*media Query*/
+@media only screen and (max-width:600px) {
+  header {
+    background-position: 20% 33%;
+  }
+}
+
+.form-control:focus {
+
+  box-shadow: none;
+  border-color: var(--accent-200);
+}
+
+.profile-button {
+  background: var(--primary-200);
+  color: #FFFFFF;
+  box-shadow: none;
+  border: none;
+}
+
+.profile-button:hover {
+  background: var(--primary-100);
+}
+
+.profile-button:focus {
+  background: var(--primary-100);
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: var(--primary-100);
+  box-shadow: none;
+}
+
+.back:hover {
+  color: var(--primary-100);
+  cursor: pointer;
+}
+
+
+/* table code : */
+
+table {
+  background-color: var(--bg-200);
+  border: none;
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 100%;
+  color: var(--white);
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  color: black;
+}
+
+table span {
+  color: black;
+}
+
+th {
+  background-color: var(--primary-100);
+  color: var(--accent-200);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+tr:nth-child(even) {
+  background-color: var(--bg-100);
+}
+
+tr {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+tr:hover {
+  background-color: var(--trhover);
+}
+
+
+
+
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination .page-link {
+  color: var(--text-100);
+  background-color: var(--bg-100);
+  border-color: var(--primary-200);
+}
+
+.pagination .page-link:hover {
+  color: var(--text-200);
+  background-color: var(--primary-200);
+  border-color: var(--primary-200);
+}
+
+.pagination .page-link:focus {
+  color: var(--text-200);
+  background-color: var(--primary-200);
+  border-color: var(--primary-200);
+}
+
+.pagination .page-item.active .page-link {
+  color: var(--bg-300);
+  background-color: var(--primary-200);
+  border-color: var(--primary-200);
+}
+
+.pagination .page-item.disabled .page-link {
+  color: var(--text-200);
+  background-color: var(--bg-100);
+  border-color: var(--primary-200);
+}
+
+/* footer */
+
+footer {
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+footer ul {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  footer ul {
+    text-align: left;
+  }
+}
